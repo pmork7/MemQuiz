@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    {% load static %}
+    <script src="{% static 'quiz/oldupload.js' %}" async></script>
+  </head>
+  <body>
+    <form action="{% url 'quiz:index' %}" enctype="multipart/form-data" action="post">
+      {% csrf_token %}
+      <legend><h1>Select the topic you want to add your list to</h1></legend>
+      {{ selector_form }}
+      <input type="submit" id="submit_button" value="Submit">
+    </form>
+  </body>
+</html>

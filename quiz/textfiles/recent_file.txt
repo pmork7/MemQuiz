@@ -1,0 +1,109 @@
+What type of power do internal computer components use? - DC (Direct Current)
+What type of power do toasters, TVs, and radios use? - AC (Alternating Current)
+What type of power comes out of wall sockets? - AC (Alternating Current)
+What type of power goes into a computer power supply and what type of power comes out? - (AC goes in, DC comes out)
+What type of voltage does a computer power supply give off? - +3.3V, +5V, +12V, -12V
+For what type of voltage is the concept of polarity relevant? - Polarity is relevant for DC power
+Which connector on the power supply does the black part of the multimeter connect to? - The black end of the multimeter should connect to the ground connector on the power supply
+How much voltage could a power supply be holding at any given time after being powered on? - 120V AC
+How much voltage could a CRT monitor be holding? - 35,000V AC
+What component in a CRT and a power supply allows it to hold a charge even after being powered off? - A capacitor, capacitors
+What is the unit of measure for current? - Amps (amperes)
+What exactly does an amp represent at the physical level? - Number of electrons traveling through a circuit in a second
+What is the unit of measure for voltage? - Volts
+What is a useful analogy for understanding voltage? - Voltage is like pressure that is applied to push water through a pipe
+How are power supplies rated for current? - Power supplies can be rated at 20 amps for a 5-volt level and 8 amps for a 12-volt level
+What is the unit of measure for power? - Watts
+How are watts calculated? - Whats are the sum of all outputs in a given circuit (voltage x current) for a power supply that provides 20 amps at the 5-volt level and 8 amps at the 12-volt level, the wattage would be (20 x 5) + (8 x 12) = 196W.
+What is the unit of measure for resistance? - Ohms
+What is resistance in electronics? - Resistance refers to the force acting against the flow of electrons through a circuit.
+What does the term continuity mean in relation to resistance? - Continuity refers to whether current can travel through a given wire, in a functioning wire there should be almost no resistance and current should travel easily, in a broken wire resistance could be a million ohm or infinite ohms.
+What does OL stand for as a reading on the multimeter? - Infinite ohms
+What does the Ω symbol mean? - Ohms
+What tool do you use to perform a continuity check? - Multimeter
+Is polarity important for performing a continuity check? - No, it's not relevant
+How can you find the beginning and end of a given section of cabling so that you can perform a continuity test on it? - You can look at the pin-out (wiring list) diagram
+Why should you not replace a fuse with another one that has a higher current rating? - Because fuses are designed to fail if they receive a higher level of current than they are rated for. If you replace a fuse with one that has a higher rating for current, then a dangerous amount of current could travel through it and damage electronic components that are farther downstream.
+What happens if you send 5 amps of current through a 3 amp fuse? - The fuse will melt
+What does it mean if you perform a continuity test on a fuse and the reading on the multimeter says infinite ohms? - It means the fuse has blown
+Can you perform a continuity test on a fuse while it's still connected to a circuit or do you need to remove it first? - You need to remove it first
+What is the unit of apparent power? - Volt ampere
+What does apparent power represent? - Apparent power describes how much power an uninterruptible power supply can deliver. For example, the amount of power a battery can deliver if the power supply has lost AC power.
+What ranges of VAC can a power supply accept? - Depending on the type, power supplies can accept 100V to 120V or 200V to 240V
+What is a dual-voltage power supply - A dual-voltage power supply is one that can accept different levels of AC voltage. They often have a switch on the side that you can set to match the wall outlet AC voltage or they can automatically detect the voltage.
+What does it mean if a power supply is auto-switching? - An auto-switching power supply can monitor wall voltage and automatically adjust itself to that level of power.
+What ranges of VAC can an auto-switching power supply receive? - An auto-switching power supply can receive 100-240VAC at 50-60Hz
+Is it okay to power on a power supply without a motherboard connection? - No, you should not do that
+What are the power supply form factors? - ATX, ATX12V, micro-ATX
+How many pins does an ATX12V motherboard connector have? - 24 pins
+How many pins does a version 1 motherboard connector have? - 20 pins
+What does it mean if a power supply has soft switch capability? - It means the power supply can be controlled by software or hardware to provide a small level of voltage to wake up the motherboard and also to lower the voltage level to conserve power.
+Are power supplies compatible with all types of hardware components? - No, check with the manufacturer of your processor, motherboard or videocard to see what power supplies are compatible with them. Many laptop power supplies are proprietary.
+What type of connector is the main ATX power connector the the motherboard? - 24-pin main
+What voltages does the 24-pin main ATX power connect to the motherboard have? - +3.3, +5, +12, -12
+What type of connector does the internal SATA power connector have? - 15-pin SATA power
+What voltages does a internal SATA power connector have? - +3.3, +5, +12
+What types of connectors are available for the PCIe video adapter? - 8-pin PCIe, 6-pin PCIe
+What voltage is used for a PCIe video adapter connection? - +12
+What type of connector is used for the AUX connection? - 6-pin connector
+What voltages are used for the AUX connection? - +3.3, +5
+What connector is used for peripheral devices such as hard drives and CD/DVD drives? - 4-pin Molex
+What voltages go through peripheral device connections e.g. hard drives and CD/DVD drives? - +5, +12
+What connector is used for a peripheral device like a floppy drive? - 4-pin Berg
+What voltage is used for a floppy drive connector? - +12
+What type of connector is used to monitor fan speed? - 3-pin
+What types of power supply connectors are there on an ATX motherboard? - Main ATX power to motherboard (24-pin), Internal SATA power (15-pin), 8-pin 12V for CPU, PCIe video (8-pin or 6-pin), AUX (6-pin), peripheral devices (4-pin Molex), floppy drive (4-pin Berg), fan speed (3-pin), 4-pin 12V for CPU
+What is the first POST test a computer runs when it is turned on? - The power supply runs a test to make sure the voltage levels on each of the connectors is correct, if it's working the PWR_OK light will turn on
+What does the +5VSB pin on the 24-pin motherboard connector do? - It provides standby power for features like Wake on LAN or Wake on Ring
+Do all power supplies run tests before green lighting PWR_OK? - No, high-quality power supplies will delay sending the PWR_OK signal so that the voltages have time to settle and can be properly tested, some power supplies do not delay the power good signal, and some really cheap power supplies do not have a power good circuit to test the voltages and just automatically send a signal to PWR_OK without doing any tests.
+What is a Y power connector? - A Y power connector splits one molex connector into two molex connectors so that two devices can be given power. Before using a Y connector, ensure that the power supply is adequate to supply power to additional devices.
+What voltage is the signal sent from the front panel that tells the power supply to turn on and give power? - 5V
+What is ACPI (Advanced Configuration and Power Interface)? ACPI allows the BIOS/UEFI and operating system control over device power and modes of operation.
+In ACPI what is global system state G0? - Working
+In ACPI what is global system state G1? - Sleeping
+In ACPI what is global system state G2? - Soft off
+In ACPI what is global system state G3? - Mechanical off
+What sleep states are part of G0? - S0
+What sleep states are part of G1? - S1, S2, S3, S4
+What sleep states are part of G2? - S5
+What are the system capabilities during S1? - CPU is powered on, RAM is being refreshed, hard drives and unused devices are not running
+What are the system capabilities during S2? - CPU is not powered, RAM is being refreshed, system can be restored instantly upon user interrupt
+What are the system capabilities during S3? - Reduced power supply output, RAM is being refreshed, some information in RAM is restored to CPU and the cache
+What are the system capabilities during S4? - Lowest power, takes the longest to come up, information in RAM is stored to nonvolatile memory such as hard drive or flash media. Also known as hibernate mode.
+What are the system capabilities during S5? - Almost no power consumption, no information is saved, requires operatin system to reboot
+In a Windows environment, which ACPI mode does hibernate mode use? - G1 S4 mode
+What is the Delay Prior to Thermal BIOS/UEFI power setting? - Defines the number of minutes the system waits to shut down the system when an overheating situation occurs.
+What is the CPU Warning Temperature BIOS/UEFI power setting? - Specifies the CPU temperature at which a warning message is displayed to the screen.
+What is the typical wattage rating of a power supply? - Power supplies typically have a wattage ranging from 250 to 500 watts.
+What is a dual-rail power supply? - A dual rail power supply has two +12V output lines.
+Do the output lines on a dual-rail power supply have independent power sources? - No, they are usually derived from the same source.
+Will a computer use the wattage needed or the total capacity of a power supply? - A computer will only use the wattage it needs, not the total capacity.
+What determines the electricity bill from computer usage? - The power needed to convert AC to DC is what has the most signifance on the electricity bill. This is known as the efficiency.
+How can you calculate the total power usage of the computer? - Add together the voltage multiplied by the amps for each power line (+5V, -5V, +12V, -12V, +3.3V) that is being used.
+Can the power supply generate enough power if every power line is connected to a device and being used at max capacity? - No, but typically this situation does not occur because the -5V and -12V lines are not used very often.
+What information do you need to know about the devices plugged in to the computer to calculate total power usage? - You need to know the current that each device needs at a particular voltage to calculate the power consumption.
+What should you consider when buying a new power supply? - Size, form factor, wattage, make sure the on-off button lines up with the case, number and type of connectors, number of 12V rails monitored for over current condition.
+Of two power supplies that are the same wattage but different weights, which one might be higher quality and why? - A heavier power supply likely has a bigger transformer, bigger heatsink, and higher quality components.
+What is 80 PLUS? - A power supply efficiency system
+What are ENERGY STAR specifications? - Specifications to measure power usage efficiency.
+What are the six 80 PLUS energy levels and what levels of efficiency do the require? - #1 80PLUS (20% load - 80%, 50% load - 80%, 100% load - 80%), #2 80 PLUS Bronze (20% load - 82%, 50% load - 85%, 100% load - 82%), #3 80 PLUS Silver (20% load - 85%, 50% load - 88%, 100% load - 85%), #4 80 PLUS Gold (20% load - 87%, 50% load - 90%, 100% load - 87%), 80 PLUS Platinum (20% load - 90%, 50% load - 92%, 100% load - 89%), 80 Plus Titanium (20% load - 92%, 50% load - 94%, 100% load - 90%)
+If a power supply is not 80 PLUS certified is it not energy-efficient? - Not necessarily
+How can you save power with energy-efficient monitors? - Keep the screen saver timeout value shorter than the power saver timeout value
+How can you protect a power supply against adverse power conditions? - Unplug the computer, use a surge protector, use a UPS (uninterruptible power supply), use a line conditioner
+What voltages do motherboards and adapters use? - +3.3V and +5V, rarely -5V
+What voltages do hard drives and optical drives use? - +5V and +12V
+What voltage is commonly used to operate device motors found in drives, CPU, internal cooling fans, and graphics cards? - +12V, now sometimes +5V
+What voltage do chips use? - +5V and +3.3V
+What voltage is used for memory, PCI/PCIe adapter, and laptop fans? - +3.3V
+What places should a technician check if they are doing a power supply check? - wall outlet AC voltage, DC voltage going to the motherboard, DC voltage going to a device, and ground or lack of voltage using an outlet test.
+What can be used to check DC power levels on different power supply connectors? - A power supply tester
+What kinds of connectors does a power supply tester need to have? - Molex, SATA, and main system power.
+Should you dissassemble a power supply? - Probably, not they. They are usually riveted shut. Unless you have a background in electronics it's better to not do it.
+What can you use to check a wall outlet? - You can use an AC circuit tester to check a wall outlet.
+If a computer does not boot but then will if you press Ctrl + Alt + Delete, what might be the problem? - The motherboard might be getting a bad power good signal in which case the power supply might need to be replaced.
+What voltage is a power good signal usually supplied on? - It's usually on a +5V signal. If it's on a +3V signal then the power supply probably needs to be replaced because many motherboards expect a +5V power good signal.
+What can cause devices not to respond when the computer comes out of sleep mode? - A screen saver conflicts with ACPI, all adapters/ devices are not ACPI compliant, an adapter/device has an outdated driver, the system BIOS/UEFI or an installed adapter BIOS needs to be updated
+What should you do if the power supply fan is turning but there is no power to the computer? - Check voltages going to the motherboard, if they are good then the power supply might be bad.
+What should you do if the voltages going to the motherboard are lower than normal? - Check to make there isn't a device overloading the power supply. Unplug each device one at a time, check the motherboard voltages, and reconnect afterwards until you've checked every device to make sure it's not the culprit.
+
+

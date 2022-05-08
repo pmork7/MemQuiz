@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+
+    <link rel="stylesheet" type="text/css" href="{% static 'quiz/style.css'%}">
+    <script src="{% static 'quiz/script.js' %}"></script>
+
+    <title>Quiz App Homepage</title>
+  </head>
+  <body>
+    {% if topic_list %}
+      <ul>
+        {% for topic in topic_list %}
+        <li><a href="{% url 'quiz:detail' topic.id %}">{{topic.topic_name}}</a><li>
+        {% endfor %}
+      </ul>
+    {% else %}
+      <p>No questions available yet</p>
+    {% endif %}
+    <iframe id="mIframe" height="30%" width="50%" src="{% url 'quiz:newupload' %}" name="iframe_a"></iframe>
+    <p><a href="{% url 'quiz:newupload' %}" target="iframe_a">Add to a new topic</a></p>
+    <p><a href="{% url 'quiz:oldupload' %}" target="iframe_a">Add to an existing topic</a></p>
+  </body>
+</html>

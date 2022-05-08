@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+  </head>
+  <body>
+    {% if topic_questions %}
+      {% for question in topic_questions %}
+        <p>{{question}}</p>
+      {% endfor %}
+    {% else %}
+      <p>No questions yet for this topic.</p>
+    {% endif %}
+  </body>
+</html>

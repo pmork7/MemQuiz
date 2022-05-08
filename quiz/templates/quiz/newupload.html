@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    {% load static %}
+    <script src="{% static 'quiz/newupload.js' %}" async></script>
+  </head>
+  <body>
+    <form action="{% url 'quiz:index' %}" enctype="multipart/form-data" method="post">
+      {% csrf_token %}
+      <legend><h1>Type in a topic title and select a file to add to your list</h1></legend>
+      {{ written_form }}
+      <input type="submit" id="submit_button" value="Submit">
+    </form>
+    <div id="preview-content">
+    </div>
+  </body>
+</html>
